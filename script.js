@@ -1,46 +1,62 @@
+tempoPipoca = 10;
+tempoMacarrao = 8;
+tempoBrigadeiro = 8;
+tempoCarne = 15;
+tempoFeijao = 12;
+
 function microondas(prato,segundos) {
     let msg
     switch (prato) {
         case 'Pipoca':
-            if (segundos < 10) {
+            if (segundos < tempoPipoca) {
                 msg = 'Tempo insuficiente.';
-            } else if (segundos >= 10*3) {
+            } else if (segundos >= tempoPipoca*3) {
                 msg = 'Kabumm!!';
-            } else if (segundos >= 10*2) {
+            } else if (segundos >= tempoPipoca*2) {
                 msg = 'A comida queimou!';
             } else {
                 msg = 'Prato pronto, bom apetite!!!'
             }
             break;
         case 'Macarrão':
-        case 'Brigadeiro':
-            if (segundos < 8) {
+            if (segundos < tempoMacarrao;) {
                 msg = 'Tempo insuficiente.';
-            } else if (segundos >= 8*3) {
+            } else if (segundos >= tempoMacarrao*3) {
                 msg = 'Kabumm!!';
-            } else if (segundos >= 8*2) {
+            } else if (segundos >= tempoMacarrao*2) {
+                msg = 'A comida queimou!';
+            } else {
+                msg = 'Prato pronto, bom apetite!!!'
+            }
+            break;
+        case 'Brigadeiro':
+            if (segundos < tempoBrigadeiro;) {
+                msg = 'Tempo insuficiente.';
+            } else if (segundos >= tempoBrigadeiro*3) {
+                msg = 'Kabumm!!';
+            } else if (segundos >= tempoBrigadeiro*2) {
                 msg = 'A comida queimou!';
             } else {
                 msg = 'Prato pronto, bom apetite!!!'
             }
             break;
         case 'Carne':
-            if (segundos < 15) {
+            if (segundos < tempoCarne) {
                 msg = 'Tempo insuficiente.';
-            } else if (segundos >= 15*3) {
+            } else if (segundos >= tempoCarne*3) {
                 msg = 'Kabumm!!';
-            } else if (segundos >= 15*2) {
+            } else if (segundos >= tempoCarne*2) {
                 msg = 'A comida queimou!';
             } else {
                 msg = 'Prato pronto, bom apetite!!!'
             }
             break;
         case 'Feijão':
-            if (segundos < 12) {
+            if (segundos < tempoFeijao) {
                 msg = 'Tempo insuficiente.';
-            } else if (segundos >= 12*3) {
+            } else if (segundos >= tempoFeijao*3) {
                 msg = 'Kabumm!!';
-            } else if (segundos >= 12*2) {
+            } else if (segundos >= tempoFeijao*2) {
                 msg = 'A comida queimou!';
             } else {
                 msg = 'Prato pronto, bom apetite!!!'
